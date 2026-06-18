@@ -1,0 +1,89 @@
+{
+  // ─── "Confluence Mode" for VS Code ───────────────────────────
+  // Makes the editor feel like a wiki page, not an IDE.
+
+  "workbench.colorTheme": "Light Modern",
+  "workbench.preferredLightColorTheme": "Light Modern",
+  "workbench.startupEditor": "readme",
+  "workbench.editor.enablePreview": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.tips.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+
+  // Centered, page-like layout
+  "workbench.editor.centeredLayoutAutoResize": true,
+  "workbench.editor.showTabs": "single",
+
+  // Typography — Microsoft 365 family
+  "editor.fontFamily": "'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.7,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 90,
+  "editor.wrappingIndent": "same",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "off",
+  "editor.glyphMargin": false,
+  "editor.folding": false,
+  "editor.renderLineHighlight": "none",
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "breadcrumbs.enabled": false,
+
+  // Markdown-specific niceties
+  "[markdown]": {
+    "editor.quickSuggestions": { "comments": "on", "strings": "on", "other": "on" },
+    "editor.suggest.showWords": false,
+    "editor.defaultFormatter": "vscode.markdown-language-features",
+    "editor.formatOnSave": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false
+  },
+  "markdown.preview.fontFamily": "'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif",
+  "markdown.preview.fontSize": 15,
+  "markdown.preview.lineHeight": 1.7,
+  "markdown.preview.breaks": true,
+  "markdown.preview.typographer": true,
+
+  // Copilot — keep it conversational, BA-friendly
+  "github.copilot.chat.welcomeMessage": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+
+  // ─── Foam (wiki-style links, backlinks, graph) ───────────────
+  // Enables [[Page Name]] links across the spec/ folder, just like Confluence.
+  "foam.files.defaultExtension": ".md",
+  "foam.files.noteIdentifiers": "relative-path",
+  "foam.completion.label": "title",
+  "foam.wikilinks.enabled": true,
+  "foam.graph.style": {
+    "background": "#ffffff",
+    "node": { "note": "#5B5FC7" },
+    "highlightedForeground": "#000000"
+  },
+  "foam.openDailyNote.directory": "spec/_journal",
+  "foam.openDailyNote.fileExtension": "md",
+
+  // Hide engineering chrome
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+  "scm.diffDecorations": "none",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "python.analysis.extraPaths": [
+    "c:\\Users\\konagara\\.vscode\\extensions\\ms-security.ms-sentinel-1.2.0\\python",
+    "c:\\Users\\konagara\\.vscode\\extensions\\ms-security.ms-sentinel-2.0.2\\python",
+    "c:\\Users\\konagara\\.vscode\\extensions\\ms-security.ms-sentinel-2.1.0\\python"
+  ]
+}
