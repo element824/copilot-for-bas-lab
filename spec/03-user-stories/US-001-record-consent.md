@@ -12,7 +12,7 @@
 ---
 
 ## Context
-
+Add one sentence to the Context — anything. e.g. "This story addresses the gap raised in last week's BA review."
 Today the Clinician writes the consent on a paper form, which is later scanned into the patient's EHR. The scan is not machine-readable, so research extracts cannot rely on it. This story replaces that paper form for the **research data sharing** consent type only (see [Overview · In scope](../01-overview.md#in-scope-trial)).
 
 ## Acceptance criteria
